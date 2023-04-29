@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/add_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/currency_ruble_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/delete_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/edit_square_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/flash_on_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/north_east_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/other_admission_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/south_east_FILL0_wght400_GRAD0_opsz48.svg</file>
+  </qresource>
+</RCC>

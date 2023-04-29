@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(174, 0, 255, 255), stop:0.681818 rgba(45, 27, 102, 255));
+font: 12pt &quot;Calibri&quot;;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 50);
+border: 1px solid rgba(255, 255, 255, 60);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="lbl_new_transaction">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-weight: bold;
+font-size: 20pt;
+background-color: none;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string>Новая операция</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cb_category">
+        <property name="styleSheet">
+         <string notr="true">QComboBox{
+	font-size: 16pt;
+	color: white;
+}
+QComboBox:item{
+	color: black;
+}</string>
+        </property>
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentText">
+         <string>Сырьё</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Сырьё</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зарплата</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Электр-во</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Прочее</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="data">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 16pt;
+padding-left: 10px;</string>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+        <property name="date">
+         <date>
+          <year>2023</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_description">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 16pt;
+padding-left: 10px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Описание</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_balance">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 16pt;
+padding-left: 10px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Сумма</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="styleSheet">
+         <string notr="true">QComboBox{
+	font-size: 16pt;
+	color: white;
+}
+QComboBox:item{
+	color: black;
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Прибыль</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Расход</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="button_new_transaction">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: white;
+background-color: rgba(255, 255, 255, 50);
+border: 1px solid rgba(255, 255, 255, 60);
+border-radius: 7px;
+widht: 230px;
+height: 50px;
+}
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 60);
+}
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавить операцию</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-new-window-rc.qrc">
+          <normaloff>:/icon/icons/add_FILL0_wght400_GRAD0_opsz48.svg</normaloff>:/icon/icons/add_FILL0_wght400_GRAD0_opsz48.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res-new-window-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
